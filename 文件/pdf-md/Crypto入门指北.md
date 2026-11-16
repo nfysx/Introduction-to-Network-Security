@@ -121,9 +121,8 @@ AI 可以说是这个时代最重要的学习工具。首先，在大模型的�
 
 在实践中学习，切忌纸上谈兵！在学习知识的基础之上，多去训练场练习，多参加比赛。
 
-1. [训练 - 西电 CTF 终端](https://ctf.xidian.edu.cn/training) xdu练习场，推荐在这里练习往年 moectf 的题目，在互联网上查找题解，加速入门！
-2. [CTF²](https://ctf2.dasctf.com/explorer) 一个练习场
-3. [CryptoHack](https://cryptohack.org/) 题目种类多，难度平缓，非常不错的练习网站
+1. [CTF²](https://ctf2.dasctf.com/explorer) 一个练习场
+2. [CryptoHack](https://cryptohack.org/) 题目种类多，难度平缓，非常不错的练习网站
 
 ### **3. Blogs**
 
@@ -156,7 +155,7 @@ alice_public = pow(g, alice_private, p) # `生成` Alice `的公钥` bob_public 
 
 # `共享密钥` key = shared_secret % 256
 
-flag = b"moectf{...}"
+flag = b"flag{...}"
 
 ciphertext = [x ^ key for x in flag]
 
@@ -166,7 +165,11 @@ print(f"alice_private = {alice_private}") # `泄露了私钥` ! print(f"cipherte
 
 """
 
-p = 170141183460469231731687303715884105727 g = 3 alice_public = 42348823944539164637318232035973172471 bob_public = 101533001028006636636416596392258549313 alice_private = 20260704 ciphertext = [45, 47, 37, 35, 52, 38, 59, 36, 40, 31, 48, 50, 41, 54, 33, 52, 37, 31, 43, 37, 57, 31, 51, 40, 47, 53, 44, 36, 31, 51, 52, 33, 57, 31, 51, 37, 35, 50, 37, 52, 61] """
+p = 170141183460469231731687303715884105727 g = 3 alice_public = 42348823944539164637318232035973172471 bob_public = 101533001028006636636416596392258549313 alice_private = 20260704 ciphertext = [
+    38, 44, 33, 39, 59, 36, 40, 31, 48, 50, 41, 54, 33, 52, 37,
+    31, 43, 37, 57, 31, 51, 40, 47, 53, 44, 36, 31, 51, 52, 33,
+    57, 31, 51, 37, 35, 50, 37, 52, 61
+] """
 
 <mark>Hint: Try to search for</mark> **<mark>Diffie-Hellman</mark>** <mark>.</mark>
 
